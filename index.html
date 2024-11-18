@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
+    <header>
         <div class="container">
             <nav>
                 <a href="index.html"> 
@@ -20,29 +20,59 @@
                     <li><a href="#">Contact me</a></li>
                 </ul>
             </nav>
-            <div class="header-text">
-                <h1>Welcome.</h1>
-                <p>Hi, welcome to my website. I am Mohamad Arnaout. I am
-                    currently a Millwright mechanic and I have gone through
-                    three different career paths in the past 12 years. To read on
-                    <a href="another_page.html" title="This leads you to another page">go to the other page.
-                    </a>
-                </p>
-                <p>I am also a Computing Science student at Thompson Rivers
-                    University. I have listed the courses that I am currently
-                    taking below.
-                </p>
-                <figure>
-                    <figcaption>Courses</figcaption>
-                    <ul>
-                        <li>Computer Programming 1</li>
-                        <li>Website Design and Development</li>
-                        <li>Discrete Mathematics</li>
-                        <li>Intro to Probability and Statistics</li>
-                    </ul>
-                </figure>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-image"> 
+                    <img src = "images/mohamadnb.png" alt = "Mohamad Arnaout" >
+                </div>
+            
+                <div class="header-text">
+                    <h1>I'm Mohamad, welcome to my website.</h1>
+                    <p class="p1"> I am currently a Millwright mechanic and
+                        I have gone through several different career paths in
+                        the past 12 years in search of my passion. To read on
+                        <a href="another_page.html" title="This leads you to another page" class="link" >go to the other page.</a>
+                    </p>
+                    <div class="p2">
+                        <p>
+                            I am also a Computing Science student at Thompson Rivers
+                            University. I have listed the courses that I am currently
+                            taking below.
+                        </p>
+                        <figure>
+                            <figcaption>Courses</figcaption>
+                            <ul>
+                                <li>Computer Programming 1</li>
+                                <li>Website Design and Development</li>
+                                <li>Discrete Mathematics</li>
+                                <li>Intro to Probability and Statistics</li>
+                            </ul>
+                        </figure>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="another_page.html">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2024 Mohamad Arnaout. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
