@@ -26,6 +26,8 @@ header {
     background: none;
     padding: 10px 0;
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: flex-start;
     align-items: center;
 }
@@ -112,7 +114,8 @@ main {
     margin-top: 90px;
     line-height: 1.5;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    -webkit-text-stroke: 0.5px #ffffff;
+    -webkit-text-fill-color: #e7dede;
+    -webkit-text-stroke: 0.5px #000;
 }
 
 figure figcaption {
@@ -191,34 +194,15 @@ footer {
     color: #666;
 }
 
-@media (max-width: 1000px) {
-    body {
-        font-size: 18px;
-    }
-    .header-text {
-        width: 90%;
-        padding: 20px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .container {
-        width: 80%;
-        max-width: 1900px;
-    }
-}
-
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
         align-items: center;
     }
-
     .logo {
         margin: 0;
         max-width: 150px;
     }
-
     ul {
         display: flex;
         flex-direction: column;
@@ -226,7 +210,6 @@ footer {
         padding: 0;
         margin: 0;
     }
-
     nav ul li {
         margin: 10px 0;
     }
