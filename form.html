@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" >
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="height=device-height, initial-scale=1.0">
+      <title>Mohamad Arnaout - Contact Form</title>
+      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="./oform.css">
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <nav>
+               <a href="index.html"> 
+               <img src="images/logo.png" alt="website logo" class="logo" >
+               </a>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="another_page.html">About</a></li>
+                  <li><a href="form.html">Contact me</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <main>
+         <div class="contact-container">
+            <form id="contactInfo" action="contact.php" method="POST">
+                <h3>Contact Form</h3>
+                  <label for="fName">First Name: <span class="required">*</span></label>
+                  <input type="text" id="fName" name="fName" placeholder="First Name" required>
+
+                  <label for="lName">Last Name: <span class="required">*</span></label>
+                  <input type="text" id= "lName" name="lName" placeholder="Last Name" required>
+
+                  <label for="street">Street Address: <span class="required">*</span></label>
+                  <input type="text" id="street" name="street" placeholder="Street Address" required>
+
+                  <label for="city">City: <span class="required">*</span></label>
+                  <input type="text" id="city" name="city" placeholder="City" required>
+                
+                  <label for="province">Province: <span class="required">*</span></label>
+                  <input type="text" id="province" name="province" placeholder="Province" required>
+
+                  <label for="poscode">Postal Code: <span class="required">*</span></label>
+                  <input type="text" id="poscode" name="poscode" placeholder="A1A 1A1" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" required>
+
+                  <label for="phone">Phone Number: <span class="required">*</span></label>
+                   <input type="tel" id="phone" name="phone" placeholder="(###)###-####" pattern="\(\d{3}\)\d{3}-\d{4}" required>
+               
+                  <label for="role">Role <span class="required">*</span></label>
+                  <select name="role" id="role">
+                    <option value="">Select Role</option>
+                    <option value="student">Student</option>
+                    <option value="parent">Parent</option>
+                    <option value="dancer">Dancer</option>
+                    <option value="performer">Performer</option>
+                    <option value="other">Other</option>
+                  </select>
+                     <label for="checkbox">Would you like to contacted?</label>
+                     <input type="checkbox" id="checkbox" name="contactMe"> Yes, please contact me.
+                  <div>
+                  <label for="commBox">If you have any comments or would like to add additional information. </label>
+                   <textarea name="comments" id="commBox"></textarea>
+                  </div>
+               <br>
+                  <div class="buttons">
+                     <input type="submit" value="Submit Details" name="submit">
+                     <input type="reset" value="Cancel Details" name="cancel">
+                  </div>
+            </form>
+        </div>
+      </main>
+      <footer>
+         <div class="container">
+            <div class="footer-content">
+               <div class="footer-links">
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="another_page.html">About</a></li>
+                     <li><a href="form.html">Contact me</a></li>
+                  </ul>
+               </div>
+               <div class="footer-info">
+                  <p>&copy; 2024 Mohamad Arnaout. All rights reserved.</p>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

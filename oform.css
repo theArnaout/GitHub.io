@@ -1,0 +1,131 @@
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh-200px);
+    margin: 5rem;
+    padding: 20px 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#contactInfo {
+    background-color: #666;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#checkbox {
+   width: 10px;
+   margin: 10px 10px 15px 5px;
+}
+
+input:focus, 
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+input:invalid:not(:placeholder-shown),
+select:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+
+.buttons input[type="submit"],
+.buttons input[type="reset"] {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+    width: 40%;
+    display: block;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.buttons input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.buttons input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+.buttons input[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons input[type="submit"],
+    .buttons input[type="reset"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-height: 600px) {
+    main {
+        padding: 0.5rem;
+        margin-bottom: 0;
+    }
+}
+
+.required {
+    color: red;
+}
