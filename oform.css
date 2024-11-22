@@ -10,8 +10,7 @@ main {
 
 .contact-container {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 h3 {
@@ -20,8 +19,8 @@ h3 {
     font-size: 2rem;
 }
 
-#contactInfo {
-    background-color: #666;
+#cOrder {
+    background-color: #888;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     padding: 2rem;
@@ -106,6 +105,10 @@ textarea {
     min-height: 100px;
 }
 
+.required {
+    color: #FF0000;
+}
+
 @media (max-width: 600px) {
     .buttons {
         flex-direction: column;
@@ -124,8 +127,4 @@ textarea {
         padding: 0.5rem;
         margin-bottom: 0;
     }
-}
-
-.required {
-    color: red;
 }
